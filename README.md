@@ -53,6 +53,7 @@ Some standout players have been identified by this analysis. Justin Tucker, wide
 
 
 **Trend** measures the change in a kicker's field goal over expected (**FGOE**) from the 2018-2020 seasons. This indicates which player's are improving and those that are declining. Comparing a kicker's **Trend** with his average performance gives teams an insight into player retention and acquisition strategy (**Figure 6**). Many of the best kickers are showing improvement as indicated on the upper right hand quadrant. Some players worse than expected are showing improvement (bottom right quadrant) while others are showing decline (bottom left quadrant). 
+<img width="937" alt="trend" src="https://user-images.githubusercontent.com/48921076/156675524-a6d0d4b1-5cd0-45d4-ba86-878b15cd43e5.png">
 
 # Modeling Framework <a id="4"></a>
 
@@ -99,9 +100,24 @@ Important features in the punt model (**Figure 8**) are the distance to the end 
 We adapt the space ownership technique from soccer ([3](http://global-uploads.webflow.com/5f1af76ed86d6771ad48324b/5ff4ae0f047e8ed5f14dd294_A%20statistical%20technique%20for%20measuring%20space%20creation%20in%20professional%20soccer.pdf)) as pressure from opposing players is a key factor in the outcome of a play. It quantifies the space that players have to operate. We output a probability of control for every location on the field by considering the location, velocity, and distance to the ball for all 22 players.
 
 The game-winning 49-yard field goal by Justin Tucker illustrates our analysis. The model could be used by teams in real-time to help make play decisions (**Figure 9**). The model initially predicted a success probability of 44.2% due to the distance of the attempt and adverse weather conditions. The field goal probability decreased initially from incoming pressure from Emmanuel Moseley (**#41**). Conversely, we measure defensive performance by how much a player contributed to the decreased probability up to the attempt. Justin Tucker received a field goal percentage over expected (**FGOE**) of 0.53 aggregated over the play.
-
 https://user-images.githubusercontent.com/48921076/156675143-99e4ceb3-eaf1-4f45-be86-b48216099901.mp4
 
+A 71-yard punt play from Jake Bailey illustrates punter performance allocation and the effect of incoming pressure (**Figure 10**). The punt length was initially predicted at 48.8 yards, slightly longer than average, given the distance to the end zone and decent weather conditions. The prediction decreases significantly after the snap up to the punt from pressure from Ogbonnia Okoronkwo (**#45**) of the LA Rams. Jake Bailey received 27.5 punt yards over expected (**PYOE**) aggregated over the play.
+https://user-images.githubusercontent.com/48921076/156675662-b0e2932c-85bd-42d7-9fdb-943e9d7de80a.mp4
+
+# Conclusion <a id="7"></a>
+
+Our system provides new insights into the performance of kickers and punters. This analysis is useful for player evaluation, acquisition, and real-time game strategy. We help identify players worthy of acquisition or contract extension and players that could be traded/released. 
+
+We can extend our framework to other plays such as punt and kickoff returns. Other areas for future extension include a ghosting framework to compare player movements to optimal movements. Deep learning techniques have shown strong predictive ability with player tracking data in the past and warrants further investigation.
+
+# Appendix <a id="8"></a>
+
+Classification models are optimized for log loss since we were primarily interested in the predicted probabilities. Field goals are easier to predict than extra points (extra points are missed much less frequently). The field goal model has an AUC of 0.82, log loss of 0.33, and brier score loss of 0.104 on the evaluation set. The extra point model has an AUC of 0.63, log loss of 0.24, and brier score loss of 0.06 on the evaluation set.
+
+The area under the curve of a receiver operating charateristic (**ROC AUC**) is a common classification metric and is particularly well suited for imbalanced tasks (such as predicting whether an extra point will be made or missed). **AUC** compares the true positive rate and false positive rate of a classifier. A perfect model has an AUC of 1 while a random classifier has an AUC of 0.5. The field goal model has an **AUC** of 0.82 on data witheld from training.
+
+Another interpretability method is **permutation importance**. **Permutation importance** measures how much a performance score decreases when a feature isn't available. Instead of removing the feature entirely, it is replaced with random noise (permuted) and measures how the performance changes when the feature is replaced. This is calculated on the test set after the model has been fit. An issue with this method is that it may understate the importance of certain features if there is multicollinearity. **SHAP** is the preferred method when dealing with multicollinearity and identifying interactions in data (such as NFL player tracking data). <img width="1221" alt="fgeval" src="https://user-images.githubusercontent.com/48921076/156675791-c557e518-3401-4544-9adc-a623f68a4e9d.png">
 
 
 
