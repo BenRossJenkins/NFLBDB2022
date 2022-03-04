@@ -91,6 +91,8 @@ This provides teams with a ranking and evaluation of the most important features
 <img width="1035" alt="fgshap" src="https://user-images.githubusercontent.com/48921076/156675073-c65c895e-df16-418d-805a-c2e97952bfd1.png">
 
 Important features in the punt model (**Figure 8**) are the distance to the end zone, temperature, metrics accounting for the proximity of the closest defender to the punter, humidity, and kicker speed. Unsurprisingly, warm weather conditions and less pressure from the defenders are positive predictors of punt length.
+<img width="1024" alt="puntshap" src="https://user-images.githubusercontent.com/48921076/156675348-9a05ee0b-e1d6-404b-bfa2-52ead7b4a451.png">
+
 
 # Play Examples <a id="7"></a>
 
