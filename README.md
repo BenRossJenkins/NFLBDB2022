@@ -22,3 +22,4 @@ Punter performance metrics are developed using gradient boosting regression tree
 **Consistency:** Measure of performance consistency through the standard deviation of **PYOE** in a given season. A lower **Consistency** (low standard deviation) indicates the player has less variation his performance. Unsurprisingly, the best kickers tend to be more consistent in a season as well as over multiple seasons. The correlation between consistency and kicking performance is about -.8, meaning the best kickers tend to be more consistent and vice versa.
 
 For example, Jake Bailey’s actual punt yards were 5 yards farther than expected in 2020. He was significantly more consistent than Matt Darr (**Figure 1**). 
+<img width="906" alt="Jake DarrPYOE" src="https://user-images.githubusercontent.com/48921076/156674468-988cf32b-3ad1-4815-b9a5-054f02e12240.png">
