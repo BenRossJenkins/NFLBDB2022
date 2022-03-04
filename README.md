@@ -1,5 +1,19 @@
 # NFLBDB2022
 
+# Table of Contents
+
+* [Introduction](#1)
+* [Punter Analysis](#2)
+* [Kicker Analysis](#3)
+* [Modeling Framework](#4)
+* [Model Features](#5)
+* [Feature Importance](#6)
+* [Play Examples](#7)
+* [Conclusion](#8)
+* [Appendix](#9)
+
+Author: Ben Jenkins
+
 # Introduction <a id="1"></a>
 
 We present novel metrics for kicker and punter performance derived from statistical analysis of player tracking data. Many NFL fans attribute the outcome of a field goal attempt to factors within the kicker’s control. We apply ensemble modeling techniques to many variables to identify those that most affect play outcomes; examples include field conditions (such as temperature and wind speed) and the relative locations of the offensive and defensive players. Our probabilistic model of a player’s entire performance distribution provides a quantitative framework for evaluating special teams and those players that contribute to the outcomes of a play. This analysis can be used in real-time for game strategy and player evaluation.
