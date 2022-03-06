@@ -43,7 +43,7 @@ For example, Jake Bailey’s actual punt yards were 5 yards farther than expecte
 **Clutch:** A player’s performance over expected in the fourth quarter within a three-point game. The correlation between **Clutch** and punter performance is .63 indicating that the best punters often perform well in clutch situations.
 
 A list of punters sorted by **PYOE** helps teams evaluate performance (**Figure 2**). Some standout players include Jake Bailey in 2020, Michael Dickson, Corey Bojorquez (2020), Jack Fox (2020), and Brett Kern. Our metrics effectively identify the top kickers as reflected by individual player awards (**as indicated by * and + symbols**) and salary.
-
+<img width="1064" alt="Screen Shot 2022-03-06 at 9 44 45 AM" src="https://user-images.githubusercontent.com/48921076/156930564-69c8be49-5529-4ee8-8fe2-17550f10e09c.png">
 
 Comparing a punter’s performance relative to expectations and the expected punt yardage allows for a more detailed review of performance (**Figure 3**). Some punts are predicted to travel less far due to close distance to the end zone, adverse weather conditions, and strong pressure from opposing defenders. This results in less expected punt yardage (**ePY**). **ePY** is computed on every play and aggregated over the entire season. We find that Jake Bailey in the 2020 season strongly outperformed expectations. In contrast, Matt Darr performed significantly worse in the 2018 season on equal expected yardage.
 <img width="860" alt="pyoe" src="https://user-images.githubusercontent.com/48921076/156674805-0ba6ab81-bd51-4ffe-8bb0-3869049733d9.png">
@@ -64,7 +64,7 @@ We can examine a kicker's performance relative to expectations and the difficult
 A ranked list of players by **Total Contribution** is developed using these metrics to help teams evaluate kicker performance (**Figure 5**). Each kicker’s performance is evaluated in the 2018-2020 seasons. This provides information on kicker performance trajectory over multiple seasons. 
 
 Some standout players have been identified by this analysis. Justin Tucker, widely regarded as one of the best kickers in the league, had two of the top three seasons from 2018-2020. He consistently ranked high across all of our metrics and as one of the most clutch kickers in the entire NFL. Other kicker standouts include Wil Lutz (2018 & 2019), Brandon McManus, Matt Bryant (2018), Jason Sanders, Aldrick Rosas (2018), and Josh Lambo (2019). The majority of these highly-rated kickers received All-Pro or Pro Bowl honors. They are viewed highly around the league as reflected by salary.
-
+<img width="1104" alt="Screen Shot 2022-03-06 at 9 45 47 AM" src="https://user-images.githubusercontent.com/48921076/156930597-737c9146-3803-4766-85b4-8a0e5502d512.png">
 
 **Trend** measures the change in a kicker's field goal over expected (**FGOE**) from the 2018-2020 seasons. This indicates which player's are improving and those that are declining. Comparing a kicker's **Trend** with his average performance gives teams an insight into player retention and acquisition strategy (**Figure 6**). Many of the best kickers are showing improvement as indicated on the upper right hand quadrant. Some players worse than expected are showing improvement (bottom right quadrant) while others are showing decline (bottom left quadrant). 
 <img width="937" alt="trend" src="https://user-images.githubusercontent.com/48921076/156675524-a6d0d4b1-5cd0-45d4-ba86-878b15cd43e5.png">
